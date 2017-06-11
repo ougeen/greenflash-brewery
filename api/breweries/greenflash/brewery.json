@@ -1,0 +1,25 @@
+{
+  "message": "Request Successful",
+  "data": {
+    "id": "Nj8cgD",
+    "name": "Green Flash Brewing Company",
+    "nameShortDisplay": "Green Flash",
+    "description": "A small company with big ideas.\r\n\r\nMike and Lisa Hinkley took their interest in the craft beer industry to a new level in 2002 when they founded Green Flash Brewing Company. Former pub owners, Mike and Lisa jumped into brewing, and in 2004 renowned brewmaster Chuck Silva joined the team.\r\n\r\nWith Chuck on board we began brewing premium style beers, modern twists on traditional styles, and our beers began to develop a following. Cutting edge brews, Green Flash Brewing Company\u2019s beers don\u2019t fit traditional guidelines, instead we let our hybrid, benchmark beers blaze their own trail.\r\n\r\nLocated in San Diego, CA, we specialize in brewing assertive and distinctive beers, such as our West Coast I.P.A.: an award-winning beer whose wide acceptance has helped define a category. We also brew seasonal, collaborative and barrel-aged beers.\r\n\r\nOur award-winning beers are on draft and bottled and are available throughout the United States in bars, restaurants and retail outlets.",
+    "website": "http:\/\/www.greenflashbrew.com\/",
+    "established": "2002",
+    "mailingListUrl": "www.greenflashbrew.com\/subscribe\/",
+    "isOrganic": "N",
+    "images": {
+      "icon": "https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Nj8cgD\/upload_8QinVn-icon.png",
+      "medium": "https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Nj8cgD\/upload_8QinVn-medium.png",
+      "large": "https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Nj8cgD\/upload_8QinVn-large.png",
+      "squareMedium": "https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Nj8cgD\/upload_8QinVn-squareMedium.png",
+      "squareLarge": "https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Nj8cgD\/upload_8QinVn-squareLarge.png"
+    },
+    "status": "verified",
+    "statusDisplay": "Verified",
+    "createDate": "2012-01-03 02:41:56",
+    "updateDate": "2016-04-28 14:20:34"
+  },
+  "status": "success"
+}

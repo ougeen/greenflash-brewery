@@ -1,0 +1,41 @@
+<div class="content" ng-if="beer">
+    <div class="grid table fluid-768 beer">
+        <div class="sw-4">
+            <img ng-src="{{ beer.labels.large }}" alt="{{ beer.nameDisplay }}">
+        </div>
+        <div class="sw-8">
+            <h1 ng-bind="beer.nameDisplay"></h1>
+
+            <p ng-bind-html="beer.description|newline"></p>
+
+            <section class="parameters">
+                <dl class="grid table" ng-if="brewery.name">
+                    <dt class="sw-6">Brewed By:</dt>
+                    <dd class="sw-6">
+                        <a ng-href="{{ brewery.website }}" target="_blank" class="a-inherit" ng-bind="brewery.name"></a>
+                    </dd>
+                </dl>
+
+                <dl class="grid table" ng-if="beer.style">
+                    <dt class="sw-6">Style:</dt>
+                    <dd class="sw-6" ng-bind="beer.style.name"></dd>
+                </dl>
+
+                <dl class="grid table" ng-if="beer.available">
+                    <dt class="sw-6">Availability:</dt>
+                    <dd class="sw-6" ng-bind="beer.available.name"></dd>
+                </dl>
+
+                <dl class="grid table" ng-if="beer.abv">
+                    <dt class="sw-6">ABV:</dt>
+                    <dd class="sw-6" ng-bind="beer.abv"></dd>
+                </dl>
+
+                <dl class="grid table" ng-if="beer.ibu">
+                    <dt class="sw-6">IBU:</dt>
+                    <dd class="sw-6" ng-bind="beer.ibu"></dd>
+                </dl>
+            </section>
+        </div>
+    </div>
+</div>

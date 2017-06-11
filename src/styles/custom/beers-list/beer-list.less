@@ -1,0 +1,50 @@
+.beers-list {
+    h2 {
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .list {
+        display: flex;
+        align-items: stretch;
+        align-content: stretch;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        > * {
+            flex-basis: 100%;
+            max-width: calc(~'(100% - 60px)/4');
+            margin-right: 20px;
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            .responsive(@breakpoint-768-max, {
+                & {
+                    max-width: calc(~'(100% - 40px)/3');
+
+                    &:nth-child(4n) {
+                        margin-right: 20px;
+                    }
+                    &:nth-child(3n) {
+                        margin-right: 0;
+                    }
+                }
+            });
+
+            .responsive(@breakpoint-650-max, {
+                & {
+                    max-width: calc(~'(100% - 20px)/2');
+
+                    &:nth-child(3n) {
+                        margin-right: 20px;
+                    }
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                }
+            })
+        }
+    }
+}

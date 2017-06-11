@@ -1,0 +1,33 @@
+.responsive(@max-width, @rules) {
+  @media only screen and (max-width: @max-width) {
+	@rules();
+  }
+}
+
+.responsive-min(@min-width, @rules) {
+    @min-width-less: @min-width;
+    @media only screen and (min-width: @min-width-less) {
+        @rules();
+    }
+}
+
+.font-size-px(@size-value) {
+  @remValue: (@size-value/16.2162162);
+  @pxValue: @size-value;
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
+}
+
+.foreach(@iteration, @code) {
+    .looper(@i:1) when (@i =< @iteration) {
+        @code();
+        .looper(@i + 1);
+    }
+    .looper(1);
+}
+
+.loop(@count, @rules) {
+	.foreach(@count, {
+		@rules();
+	});
+}

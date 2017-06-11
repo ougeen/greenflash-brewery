@@ -1,0 +1,49 @@
+@amount: 12;
+@grid: 100% / @amount;
+
+.grid {
+	z-index: 1;
+	width: 100%;
+	box-sizing: border-box;
+
+	> [class*='sw'] {
+		min-height: 1px;
+		position: relative;
+		float: left;
+		box-sizing: border-box;
+	}
+
+	.loop(@amount, {
+		.sw-@{i} {
+			width: @i * @grid;
+		}
+	});
+
+
+	&.table {
+		display: table;
+		border-collapse: separate;
+		border-spacing: 0;
+
+		> [class*='sw'] {
+			display: table-cell;
+			vertical-align: top;
+			float: none;
+		}
+	}
+}
+
+@media screen and (max-width: @breakpoint-768-max) {
+	.grid {
+		&.fluid-768 {
+			&.table {
+				display: block;
+
+				& > [class*='sw'] {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
